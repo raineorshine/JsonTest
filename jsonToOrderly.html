@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jsonToOrderly</title>
+	<style>
+		textarea { width: 360px; height: 240px; }
+	</style>
+</head>
+<body>
+	<h1>Convert JSON to Orderly</h1>
+	<div>
+		<textarea id="json">{
+  "name": "orderly",
+  "description": "A schema language for JSON",
+  "homepage": "http://orderly-json.org",
+  "invented": 2009
+}</textarea>
+		<textarea id="orderly"></textarea>
+	</div>
+	<input id="convert" type="button" value="Convert" />
+	<p id="error"></p>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="lib/json2.js"></script>
+    <script src="lib/rjs.1.5.js"></script>
+    <script src="lib/MultilineString.js"></script>
+    <script src="jsonToOrderly.js"></script>
+</body>
+</html>
