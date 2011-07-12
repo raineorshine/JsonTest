@@ -1,5 +1,4 @@
-			<p>This page describes a client-side JSON testing stack. You can use this setup to create automated tests for a JSON API.
-</p><p><a rel="nofollow" class="external free" href="http://dev2.wallst.com/playground/raine/JsonTest/test.html" aiotitle="http://dev2.wallst.com/playground/raine/JsonTest/test.html">http://dev2.wallst.com/playground/raine/JsonTest/test.html</a>
+<p>This page describes a client-side JSON testing stack. You can use this setup to create automated tests for a JSON API.
 </p><p><span style="float:right">
 <!-- image -->
 </span>
@@ -32,7 +31,7 @@
 <p>(If you're adding testing to an existing API, you don't have to write the Orderly Schema from scratch... see <a title="" href="#Tips">#Tips</a> to generate a basic schema from existing JSON.)
 </p>
 <a id="Instructions" name="Instructions"></a><h2> <span class="mw-headline"> Instructions </span></h2>
-<ol><li> Copy the contents of \\d_www02\WebHome\wallstdomains\playground\raine\JsonTest to a folder in your project that will be accessible from the browser (the 'Content' folder in .NET). <b>Must be on the same domain as the API you are testing since this code is purely client-side and subject to the browser's same origin policy.</b>
+<ol><li> Copy the source to a folder in your project that will be accessible from the browser (the 'Content' folder in .NET). <b>Must be on the same domain as the API you are testing since this code is purely client-side and subject to the browser's same origin policy.</b>
 </li><li> Ensure that the example test runs properly by navigating to test.html in your browser.
 </li><li> Add test specifications to test-specifications.js. A test specification in this case is simply the direct url of the API endpoint you want to test and a url to the Orderly Schema (.orderly) or Json Schema (.json) that describes that JSON. 
 </li><li> Use the <a rel="nofollow" title="http://orderly-json.org/docs" class="external text" href="http://orderly-json.org/docs">well-documented Orderly Schema documentation</a> to write the schema that describes your JSON.
@@ -43,17 +42,5 @@
 </li><li> Cannot be used to test an API on a different domain because the client-side HTTPRequests to the API urls are restricted by the browser's same origin policy.
 </li></ul>
 <a id="Tips" name="Tips"></a><h2> <span class="mw-headline"> Tips </span></h2>
-<ul><li> If you have a fully functional API you can generate a basic Orderly schema from JSON by using the <a rel="nofollow" title="http://dev2.wallst.com/playground/raine/JsonTest/jsonToOrderly.html" class="external text" href="http://dev2.wallst.com/playground/raine/JsonTest/jsonToOrderly.html">jsonToOrderly converter</a>.
+<ul><li> If you have a fully functional API you can generate a basic Orderly schema from JSON by using the jsonToOrderly converter, included.
 </li></ul>
-
-<!-- 
-NewPP limit report
-Preprocessor node count: 20/1000000
-Post-expand include size: 0/2097152 bytes
-Template argument size: 0/2097152 bytes
-Expensive parser function count: 0/100
--->
-
-<!-- Saved in parser cache with key wikidb:pcache:idhash:14100-0!1!0!!en!2 and timestamp 20110711232627 -->
-<div class="printfooter">
-Retrieved from "<a href="https://wiki.wsod.local/wsodwiki/index.php/Json_Testing">https://wiki.wsod.local/wsodwiki/index.php/Json_Testing</a>"</div>
