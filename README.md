@@ -1,8 +1,3 @@
-<p>This page describes a client-side JSON testing stack. You can use this setup to create automated tests for a JSON API.
-</p><p><span style="float:right">
-<!-- image -->
-</span>
-</p>
 <a id="Problem_Description" name="Problem_Description"></a><h2><span class="mw-headline"> Problem Description </span></h2>
 <p>You maintain a large JSON-based API that needs some automated tests so that you can check for data issues or regressions after refactoring/bug-fixing. You want to test that all of your API endpoints are returning JSON in the correct form, such as "always includes a 'status' field", or "documentCount is always greater than 0."
 </p>
